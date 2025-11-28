@@ -1,0 +1,122 @@
+.prediction-card {
+  background: rgba(6, 10, 20, 0.55);
+  border-radius: 1rem;
+  padding: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  color: #f0f4ff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.prediction-card__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.prediction-card__header h3 {
+  margin: 0 0 0.3rem;
+  font-size: 1.25rem;
+}
+
+.prediction-card__header p {
+  margin: 0;
+  color: rgba(240, 244, 255, 0.7);
+}
+
+.status-chip {
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.status-chip.active {
+  background: rgba(97, 255, 203, 0.15);
+  color: #79ffce;
+}
+
+.status-chip.paused {
+  background: rgba(255, 138, 97, 0.15);
+  color: #ffb48a;
+}
+
+.prediction-card__content {
+  display: grid;
+  gap: 1rem;
+}
+
+.options-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.option-item {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  padding: 0.75rem;
+  border-radius: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+}
+
+.option-item input[type='radio'] {
+  margin-top: 0.35rem;
+}
+
+.option-label {
+  font-weight: 600;
+}
+
+.option-sub {
+  display: block;
+  font-size: 0.85rem;
+  color: rgba(240, 244, 255, 0.65);
+}
+
+.stake-panel label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  color: rgba(240, 244, 255, 0.75);
+  margin-bottom: 0.5rem;
+}
+
+.stake-panel input {
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  padding: 0.75rem;
+}
+
+.stake-panel button {
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.decrypted-panel {
+  padding: 1rem;
+  border-radius: 0.85rem;
+  background: rgba(57, 137, 255, 0.08);
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.decrypted-panel h4 {
+  margin: 0 0 0.2rem;
+}
+
+.decrypted-panel p {
+  margin: 0;
+}
+
+@media (min-width: 700px) {
+  .prediction-card__content {
+    grid-template-columns: 1.5fr 1fr;
+  }
+}
