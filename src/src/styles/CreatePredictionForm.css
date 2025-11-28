@@ -1,0 +1,72 @@
+.create-section {
+  background: rgba(20, 25, 46, 0.7);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #f0f4ff;
+}
+
+.create-section__header h2 {
+  margin: 0 0 0.4rem;
+}
+
+.create-section__header p {
+  margin: 0;
+  color: rgba(240, 244, 255, 0.7);
+}
+
+.create-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.create-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.95rem;
+  color: rgba(240, 244, 255, 0.85);
+}
+
+.create-form input {
+  border-radius: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  padding: 0.75rem;
+}
+
+.options-list {
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 1rem;
+  background: rgba(12, 16, 28, 0.6);
+}
+
+.options-list__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.option-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.option-row input {
+  flex: 1;
+}
+
+.option-row button {
+  padding: 0.45rem 0.85rem;
+}
+
+.form-feedback {
+  margin: 0.25rem 0 0;
+  color: rgba(175, 230, 255, 0.9);
+}
